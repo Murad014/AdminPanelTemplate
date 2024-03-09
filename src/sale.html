@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>MAdmin</title>
+</head>
+<body>
+
+<div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="hidden lg:block top-0 text-white bottom-0 lg:left-0 p-2 lg:w-[400px] overflow-y-auto bg-gray-900 md:w-[600px]">
+
+        <!-- Sidebar content goes here -->
+        <div class="p-4">
+            <div class="">
+                <h1 class="p-4 text-center text-3xl">M-Admin</h1>
+            </div>
+            <div class="my-2 bg-gray-600 h-[1px]"></div>
+
+            <ul class="mt-4">
+                <li class="py-2 hover:bg-darkBlue rounded-full p-4 cursor-pointer">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#" class="p-4">Dashboard</a>
+                </li>
+                <div class="my-2 bg-gray-600 h-[1px]"></div>
+
+                <li class="py-2 hover:bg-darkBlue rounded-full p-4  cursor-pointer">
+                    <i class="fa-solid fa-table"></i>
+                    <a href="#" class="p-4">Tables</a>
+                </li>
+                <div class="my-2 bg-gray-600 h-[1px]"></div>
+                <li class="py-2 hover:bg-darkBlue rounded-full p-4  cursor-pointer">
+                    <i class="fa-brands fa-wpforms"></i>
+                    <a href="#" class="p-4">Forms</a>
+                </li>
+
+                <div class="my-2 bg-gray-600 h-[1px]"></div>
+                <li class="py-2 hover:bg-darkBlue rounded-full p-4  cursor-pointer">
+                    <i class="fa-solid fa-shop"></i>
+                    <a href="#" class="p-4">Sale</a>
+                </li>
+
+                <div class="my-2 bg-gray-600 h-[1px]"></div>
+                <li class="py-2 hover:bg-darkBlue rounded-full p-4  cursor-pointer">
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <a href="#" class="p-4">Hide</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Sale content -->
+    <div class="" id="sale-content">
+        <div class="flex lg:flex-row mt-10 ml-5 md:flex-col">
+
+            <!-- Inputs -->
+            <div class="flex mb-3">
+                <!-- Content -->
+                <div class="flex flex-row space-y-3 space-x-1">
+                    <input type="hidden" />
+                    <input type="text"
+                           placeholder="Enter Barcode"
+                           class="p-1.5 w-72 border border-gray-400 font-bold text-xl h-[50px]"/>
+
+                    <input type="text"
+                           placeholder="Quantity"
+                           value="1"
+                           class="p-1.5 w-32 border border-gray-400 font-bold text-xl h-[50px]"  />
+                </div>
+
+                <div class="m-1"></div>
+
+                <div class="flex flex-col space-y-3">
+                    <button class="rounded-2xl border-2 hover:bg-gray-200  font-bold py-2 px-4  mt-4">
+                        Enter
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Price display-->
+            <div class="flex ml-5">
+                <input type="text"
+                       class="font-bold text-9xl text-bluePrice w-full mr-2 text-center"
+                       value="12.23"/>
+            </div>
+        </div>
+
+
+        <div class="my-2 bg-gray-100 h-[1px] mx-2"></div>
+
+        <!--        Product List-->
+        <div class="max-w-screen-lg mx-auto mt-10 overflow-y-auto" style=" max-height: 500px;">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50 sticky top-0 z-10">
+                <tr class="font-bold text-gray-500">
+                    <th scope="col" class="px-6 py-3  text-xs font-medium uppercase tracking-wider">Product Name</th>
+                    <th scope="col" class="px-6 py-3  text-xs font-medium uppercase tracking-wider">Quantity</th>
+                    <th scope="col" class="px-6 py-3  text-xs font-medium uppercase tracking-wider">Price</th>
+                    <th scope="col" class="px-6 py-3  text-xs font-medium uppercase tracking-wider">Sum Price</th>
+                    <th scope="col" class="px-6 py-3  text-xs font-medium uppercase tracking-wider">Action</th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 font-bold h-80">
+
+                    <tr class="bg-white hover:bg-gray-100">
+                        <td class="px-6 py-4 whitespace-nowrap text-center ">Book</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">2</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">12.50</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-center">25.00</td>
+                        <td class=" text-center">
+                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white hover:bg-gray-100">
+                        <td class="text-center px-6 py-4 whitespace-nowrap">Computer</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">1</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">12232.50</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">12232.50</td>
+                        <td class=" text-center">
+                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white hover:bg-gray-100">
+                        <td class="text-center px-6 py-4 whitespace-nowrap">Book</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">2</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">12.50</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">25.00</td>
+                        <td class=" text-center">
+                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white hover:bg-gray-100">
+                        <td class="text-center px-6 py-4 whitespace-nowrap">Book</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">2</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">12.50</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">25.00</td>
+                        <td class=" text-center">
+                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white hover:bg-gray-100">
+                        <td class="text-center px-6 py-4 whitespace-nowrap">Book</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">2</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">12.50</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">25.00</td>
+                        <td class=" text-center">
+                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white hover:bg-gray-100">
+                        <td class="text-center px-6 py-4 whitespace-nowrap">Book</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">2</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">12.50</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">25.00</td>
+                        <td class=" text-center">
+                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg-white hover:bg-gray-100">
+                        <td class="text-center px-6 py-4 whitespace-nowrap">Book</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">2</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">12.50</td>
+                        <td class="text-center px-6 py-4 whitespace-nowrap">25.00</td>
+                        <td class=" text-center">
+                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+
+</div>
+</body>
+</html>
